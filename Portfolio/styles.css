@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif ;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),url(images/BabyJ.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+h2{
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    
+}
+
+span{
+    color: #669DB3dd;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li a:before{
+    content: '';
+    width: 10px;
+    height: 4px;
+    background-color: #669DB3dd;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .4s;
+}
+
+ul li:hover a:before{
+    width: 50%;
+    transform: translateX(100%);
+}
+
+nav button{
+    border: none;
+    background-color: #669DB3dd;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+nav button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px 20px 0px;
+
+}
+
+img{
+    width: 499px;
+    height: 500px;
+    object-fit: cover;
+    border: none;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+
+.greetings{
+    padding: 220px 200px 200px 200px;
+}
+
+.greetings h1{
+    color: white;
+    font-size: 3em;
+    padding-bottom: 10px;
+    opacity: 0.7;
+}
+
+.greetings button{
+    color: white;
+    border: none;
+    background-color: #669DB3dd;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 35%;
+    opacity: 0.7;
+    transition: .4s;
+
+}
+
+.greetings button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
